@@ -1,0 +1,54 @@
+% Declaramos la clase de documento
+\documentclass[12pt,letterpaper,]{article}
+
+% Paquetes de idioma y codificacion de caracteres
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+
+%Paquetes de escritura matematica
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{changepage}
+\usepackage{float}
+\usepackage{cite}
+\usepackage{url}
+
+\usepackage[left=2.50cm, right=2.50cm]{geometry}
+\author{Jesús Vázquez Anguiano}
+\title{Portada siempre practica}
+
+\begin{document}
+	\pagestyle{plain}{
+			\pagestyle{empty}
+			\changepage{3cm}{1cm}{-0.5cm}{-0.5cm}{}{-2cm}{}{}{}
+			\noindent
+			{\small
+				\begin{tabular}{p{0.626\textwidth} p{0.50\textwidth} }
+				\includegraphics[scale=0.3]{ujed} &  \includegraphics[scale=.4]{FCE}
+				\end{tabular}
+			}
+		}
+%\begin{titlepage}
+%\centering
+%%%{\includegraphics[width=0.2\textwidth]{logo}\par}
+%\vspace{1cm}
+%{\bfseries\LARGE Universidad Juárez del estado de Durango \par}
+%\vspace{1cm}
+%{\scshape\Large Facultad de Ciencias Exactas \par}
+%\vspace{0.5cm}
+%{\scshape\Large Maestría en Estadística Aplicada \par}
+%\vspace{1cm}
+%{\scshape\Huge Curso Propedéutico \par}
+%\vspace{3cm}
+%{\itshape\Large Reporte Final \par}
+%\vfill
+%{\Large Autor: \par}
+%{\Large Jesús Vázquez Anguiano \par}
+%\vfill
+%{\Large Enero 2021 \par}
+%\end{titlepage}
+\end{document} 
